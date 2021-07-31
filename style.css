@@ -8,6 +8,8 @@ body {
 
 /* nav section */
 nav {
+    position: fixed;
+    top: 0;
     width: 100%;
     background-color: #192530;
     display: flex;
@@ -38,6 +40,33 @@ ul[class="nav-list"] > li > a {
     text-decoration: none;
 }
 
+.tendina {
+    position: relative;
+}
+
+.sub-tendina {
+    display: none;
+}
+
+.tendina:hover .sub-tendina {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 12px;
+    z-index: 1;   
+   
+}
+
+.sub-tendina-list-item {
+    color: rgb(170, 170, 170);
+    background-color: #243340;;
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    box-shadow: 6px 6px 6px 6px rgb(0 0 0 / 15%);
+}
+
 input[class="search"] {
     padding: 8px;
     width: 60%;
@@ -59,7 +88,7 @@ span {
 
 /* main section */
 main {
-    margin: 50px 200px 0px;
+    margin: 100px 200px 0px;
 }
 
 .details-section {
@@ -78,8 +107,11 @@ h1 + div  {
     color: rgb(170, 170, 170);
 }
 
+
+p[class="plot"],
 p {
     color: white;
+    cursor: pointer;
 }
 
 table {
@@ -95,6 +127,7 @@ table {
     font-weight: bold;
     color: #79b8f3;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .td-languages {
@@ -109,6 +142,7 @@ table {
 
 .infinity-logo {
     margin: 30px 10px 0px 0;
+    cursor: pointer;
 }
 
 .sub-details-section {
@@ -128,6 +162,7 @@ table {
     border-radius: 2px;
     font-size: 0.9rem;
     text-align: left;
+    cursor: pointer;
 }
 
 button {
@@ -137,6 +172,7 @@ button {
     height: 42px;
     border: none;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* footer section */
@@ -163,15 +199,16 @@ div + p {
     list-style: none;
 }
 
-ul[class="footer-list"] > li {
+ul[class="footer-list"] > li > a {
     font-weight: bold;
     color: white;
     padding: 0 15px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* .hobbits-pic {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-} */
+.quadrato {
+    width: 100%;
+    height: 800px;
+    background-color: #0f171e;
+}
