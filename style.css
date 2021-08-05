@@ -88,19 +88,20 @@ span {
 
 /* main section */
 main {
-    margin: 100px 200px 0px;
-}
-
-.details-section {
     background: url(assets/hobbits.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 55%;
+    background-size: 65%;
     height: 480px;
+}
+
+.details-section {
+    margin: 5%, 4% 0;
 }
 
 h1 {
     color: white;
+    margin-top: 8%;
 }
 
 h1 + div  {
@@ -177,7 +178,7 @@ button {
 
 /* footer section */
 footer {
-    margin: 0px 200px; 
+    margin: 2% 4%; 
 }
 
 .sub-footer {
